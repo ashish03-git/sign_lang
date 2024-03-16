@@ -10,14 +10,15 @@ import {
 const loginStyles = StyleSheet.create({
   container: {
     width: responsiveScreenWidth(100),
-    height: responsiveScreenHeight(100),
+    height: responsiveScreenHeight(102),
   },
   topContainer: {
-    flex: 2,
+    flex: 1.5,
     backgroundColor: '#fff',
   },
   inputFiledContainer: {
     flex: 2,
+    // backgroundColor:'red'
   },
   bottomContainer: {
     flex: 1,
@@ -29,21 +30,39 @@ const loginStyles = StyleSheet.create({
     top: responsiveHeight(7),
     zIndex: -10,
   },
-  LoginFont: {
-    fontSize: responsiveFontSize(3.4),
-    fontWeight: '800',
+  LoginHeadingFont: {
+    fontSize: responsiveFontSize(4),
+    fontWeight: '600',
     color: '#2F80ED',
   },
+  LoginFont: {
+    fontSize: responsiveFontSize(2.4),
+    // fontWeight: '600',
+    color: '#2F80ED',
+  },
+  loginButton: {
+    width: responsiveWidth(26),
+    height:responsiveHeight(6),
+    justifyContent: 'center',
+    alignItems: 'center',
+    // paddingVertical: responsiveWidth(2),
+    borderWidth: responsiveWidth(0.3),
+    borderRadius: responsiveWidth(1),
+    borderColor: '#fff',
+    marginLeft: responsiveWidth(28),
+  },
   textInputeText: {
-    fontSize: responsiveFontSize(2),
+    fontSize: responsiveFontSize(1.8),
     fontWeight: '400',
     color: '#2F80ED',
   },
   textInpute: {
-    width: responsiveWidth(80),
-    height: responsiveHeight(5),
+    width: responsiveWidth(85),
+    height: responsiveHeight(6),
     backgroundColor: '#D9D9D9',
     borderRadius: responsiveWidth(2),
+    paddingLeft: responsiveWidth(3),
+    fontSize: responsiveFontSize(2),
   },
   socialIcon: {
     backgroundColor: '#fff',

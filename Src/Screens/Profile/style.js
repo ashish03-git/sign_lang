@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
   },
   backIconeContainer: {
     flex: 0.5,
+    justifyContent:"center",
+    // alignItems:"center",
     paddingHorizontal: responsiveScreenWidth(4),
   },
   profileContainer: {
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     width: responsiveScreenWidth(94),
     height: responsiveScreenHeight(12),
     borderRadius: responsiveScreenWidth(4),
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
   },
   profileImageContainer: {
     flex: 2,
@@ -75,14 +77,19 @@ const styles = StyleSheet.create({
   },
   servicesContainer: {
     width: responsiveScreenWidth(93),
-    height: responsiveScreenHeight(40),
+    // height: responsiveScreenHeight(50),
     borderRadius: responsiveScreenWidth(3),
-    backgroundColor: '#6AA9FF',
+    backgroundColor: '#C3DCFD',
+  },
+  serviceItemIcon: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   itemContainer: {
     flexDirection: 'row',
     height: responsiveScreenHeight(5),
-    marginVertical: responsiveScreenWidth(2),
+    marginVertical: responsiveScreenWidth(1.5),
     borderBottomWidth: 0.4,
   },
   itemHeadingContainer: {
@@ -90,15 +97,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   itemText: {
-    fontSize: responsiveScreenFontSize(1.9),
+    fontSize: responsiveScreenFontSize(2.1),
     color: 'black',
   },
-  itemIcon:{
+  itemIcon: {
     flex: 1,
     alignItems: 'flex-end',
-    justifyContent:"center",
+    justifyContent: 'center',
     paddingRight: responsiveScreenWidth(3),
-  }
+  },
 });
 
 export default styles;
